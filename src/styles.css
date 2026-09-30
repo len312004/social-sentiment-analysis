@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom page-wide styles */
+:root{
+  --card-bg: rgba(255,255,255,0.06);
+  --card-glow: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+}
+
+/* Utility to simulate translucent frosted card */
+.card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(6,20,70,0.35);
+  backdrop-filter: blur(6px);
+}
